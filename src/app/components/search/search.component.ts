@@ -13,7 +13,7 @@ export class SearchComponent {
     constructor(private spotify: SpotifyService) {
     }
 
-    async buscar(termino∫: string) {
+    async buscar(termino: string) {
         console.log(termino);
         this.loading = true;
         const obs = await this.spotify.getArtistas(termino);
