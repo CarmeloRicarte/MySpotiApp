@@ -1,0 +1,5 @@
+<app-loading *ngIf="loading"></app-loading>
+<div *ngIf="error" class="alert alert-danger animated fadeIn">
+  <h3>Error, token de autenticación de Spotify expirado</h3>
+</div>
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
